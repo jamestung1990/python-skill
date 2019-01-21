@@ -1,3 +1,4 @@
+Converting string into datatime [1]
 Remember this and you didn't need to get confused in datetime conversion again.
 
 String to datetime object = strptime
@@ -52,6 +53,7 @@ OutPut
 
 [datetime.datetime(2017, 12, 1, 0, 0), datetime.datetime(2017, 1, 1, 0, 0), datetime.datetime(2017, 1, 12, 0, 0), datetime.datetime(2017, 6, 1, 1, 30)]
 
+[1]: https://stackoverflow.com/questions/466345/converting-string-into-datetime "converting-string-into-datetime"
 ==================================================================================================================================================================
 datetime.strptime is the main routine for parsing strings into datetimes. It can handle all sorts of formats, with the format determined by a format string you give it:
 
