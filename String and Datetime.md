@@ -1,28 +1,16 @@
-Converting string into datatime [1]
+## [Converting string into datatime]
 Remember this and you didn't need to get confused in datetime conversion again.
-
 String to datetime object = strptime
-
 datetime object to other formats = strftime
-
 Jun 1 2005  1:33PM
-
 is equals to
-
 %b %d %Y %I:%M%p
-
 %b Month as locale’s abbreviated name(Jun)
-
 %d Day of the month as a zero-padded decimal number(1)
-
 %Y Year with century as a decimal number(2015)
-
 %I Hour (12-hour clock) as a zero-padded decimal number(01)
-
 %M Minute as a zero-padded decimal number(33)
-
 %p Locale’s equivalent of either AM or PM(PM)
-
 so you need strptime i-e converting string to
 
 >>> dates = []
@@ -53,7 +41,7 @@ OutPut
 
 [datetime.datetime(2017, 12, 1, 0, 0), datetime.datetime(2017, 1, 1, 0, 0), datetime.datetime(2017, 1, 12, 0, 0), datetime.datetime(2017, 6, 1, 1, 30)]
 
-[1]: https://stackoverflow.com/questions/466345/converting-string-into-datetime "converting-string-into-datetime"
+[Converting string into datatime]:  https://stackoverflow.com/questions/466345/converting-string-into-datetime "converting-string-into-datetime"
 ==================================================================================================================================================================
 datetime.strptime is the main routine for parsing strings into datetimes. It can handle all sorts of formats, with the format determined by a format string you give it:
 
